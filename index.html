@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Another First Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      table {
+        /* border: 1px solid black; */
+        border-collapse: collapse;
+      }
+      tr,
+      th {
+        border: 1px solid black;
+        padding: 15px;
+      }
+      td {
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="classname">Kelvin is a Javascript pro</div>
+    <h1 style="background-color: blue; color: #fff">
+      This is the first heading tag
+    </h1>
+    <h2>This is the second heading tag</h2>
+    <i class="fas fa-rocket"></i> <i class="fa-solid fa-magnifying-glass"></i>
+    <h3>This is the third heading tag</h3>
+    <h4>This is the fourth heading tag</h4>
+    <h5>This is the fifth heading tag</h5>
+    <h6>This is the sixth heading tag</h6>
+
+    <a href="https://github.com/" target="_blank">GitHub</a>
+
+    <audio controls>
+      <source src="/assets/audio/JayMikee_-_Here_For_You.mp3" />
+    </audio>
+    <p id="related">
+      This is a composition about myself. My name is Ali and I'm in primary 5. I
+      love to eat and skip. Football is one of my my many hobbies as well as
+      cooking delicious delicacies. Lorem ipsum dolor sit amet
+      <code>'consectetur' </code> adipisicing elit.
+      <br />
+      Atque consequatur molestiae omnis earum similique magnam, esse aut, ullam
+      quis neque architecto, nam qui corrupti ex vero. Dignissimos ipsum veniam
+      quis?
+    </p>
+
+    <h3>Registration for Frontend Class 2023</h3>
+    <form action="#">
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" id="fname" placeholder="first name" />
+      <br />
+      <label for="lname">Last Name:</label>
+      <input type="text" name="lname" id="lname" placeholder="last name" />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="enter your password"
+      />
+      <br />
+      <input type="checkbox" name="available" id="available" />
+      <label for="available">Available for training</label> <br />
+      <input type="checkbox" name="available" id="not_available" />
+      <label for="not_available">Not Available for training</label> <br />
+      <input type="radio" name="food" id="amala" value="amala" />
+      <label for="interested">Interested in Amala</label> <br />
+      <input type="radio" name="food" id="eba" value="eba" />
+      <label for="interested">Interested in Eba</label> <br />
+      <label for="state">Select your state</label>
+      <select name="state" id="state">
+        <option value="" disabled selected>..select your state..</option>
+        <option value="state">Lagos</option>
+        <option value="state">Oyo</option>
+        <option value="state">Enugu</option>
+        <option value="state">Kwara</option>
+        <option value="state">Kaduna</option>
+      </select>
+      <br />
+      <input
+        type="image"
+        src="/assets/images/me.jpg"
+        width="100px"
+        height="100px"
+        alt="logo"
+      />
+      <br />
+      <label for="date">Select your arrival date</label>
+      <input type="date" name="date" id="date" /> <br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" /> <br />
+      <label for="file">Upload your file</label>
+      <input type="file" name="file" id="file" /> <br />
+      <label for="month">Select your birth month</label>
+      <input type="month" name="month" id="month" /> <br />
+      <label for="number">How many people are coming with you: </label>
+      <input type="number" name="number" id="number" /> <br />
+      <label for="range">Select your Transportation range:</label>
+      <input
+        type="range"
+        maxlength="100"
+        minlength="20"
+        name="range"
+        id="range"
+      />
+      <br />
+      <label for="search">Search for your favorite articles</label>
+      <input type="search" name="search" id="search" /> <br />
+      <label for="tel">Enter your tel number:</label>
+      <input type="tel" name="telephone" id="telephone" /> <br />
+      <label for="time">What time are you looking?</label>
+      <input type="time" name="time" id="time" /> <br />
+      <label for="week">What week are you looking?</label>
+      <input type="week" name="week" id="week" /> <br />
+      <label for="url"> Enter your URL:</label>
+      <input type="url" name="url" id="url" /> <br />
+      <label for="button">Register me!</label>
+      <input type="submit" value="Register me!" /> <br />
+    </form>
+
+    <h2>How to Register for 2023 UTME</h2>
+    <ol type="a">
+      <li>Create a new Gmail account</li>
+      <li>
+        Go to
+        <a href="http://jamb.gov.ng" target="_blank" rel="noopener noreferrer"
+          >JAMB WEBSITE</a
+        >
+        to sign up and create an account using the Gmail account created.
+      </li>
+      <li>Input your O'level details and update the account.</li>
+      <li>Make payment for the registration on the payment section.</li>
+      <li>
+        Printout the receipt and proceed for capturing at the designated
+        registration CBT center.
+      </li>
+    </ol>
+
+    <h2>List of Animals in the Forest</h2>
+    <ul type="circle">
+      <li>Lion</li>
+      <li>Cheetah</li>
+      <li>Chimpanzee</li>
+      <li>Wolf</li>
+      <li>Hyena</li>
+      <li>Monkey</li>
+      <li>Baboon</li>
+      <li>Kangaroo</li>
+      <li>Ostrich</li>
+      <li>Horse</li>
+      <li>Gorilla</li>
+      <li>Tiger</li>
+    </ul>
+
+    <h3>
+      Inventory Information of Students in Innkeeper Frontend Development Class
+    </h3>
+    <table>
+      <thead>
+        <tr>
+          <th>S/N</th>
+          <th>Name</th>
+          <th>Phone Number</th>
+          <th>Email</th>
+          <th>Marital Status</th>
+          <th>Date Joined</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Folagboye Adeola</td>
+          <td><a href="tel:+2341234567899">01234567890</a></td>
+          <td>
+            <a href="mailto:folagboyeadeola@gmail.com"
+              >folagboyeadeola@gmail.com</a
+            >
+          </td>
+          <td>Single</td>
+          <td>20th September 2015 <i class="fas fa-car-alt"></i></td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Adelaja Kelvin</td>
+          <td><a href="tel:+2341234567899">01234567890</a></td>
+          <td>
+            <a href="mailto:ridwanadelaja@gmail.com">ridwanadelaja@gmail.com</a>
+          </td>
+          <td>Married</td>
+          <td>20th June 2016</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Emmanuel Keshi</td>
+          <td><a href="tel:+2341234567899">01234567890</a></td>
+          <td>
+            <a href="mailto:emmanuelkeshi@gmail.com">emmanuelkeshi@gmail.com</a>
+          </td>
+          <td>Single</td>
+          <td>10th September 2015</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Johnbull Whitney</td>
+          <td><a href="tel:+2341234567899">01234567890</a></td>
+          <td>
+            <a href="mailto:johnsonbullson@gmail.com"
+              >johnsonbullson@gmail.com</a
+            >
+          </td>
+          <td>Single</td>
+          <td>20th January 2021</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Steve Austin</td>
+          <td><a href="tel:+2341234567899">01234567890</a></td>
+          <td>
+            <a href="mailto:steveaustin@gmail.com">steveaustin@gmail.com</a>
+          </td>
+          <td>Married</td>
+          <td>20th March 2019</td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td>Michael Olowoporoku</td>
+          <td><a href="tel:+2341234567899">01234567890</a></td>
+          <td>
+            <a href="mailto:michael.olowoporoku@gmail.com"
+              >michael.olowoporoku@gmail.com</a
+            >
+          </td>
+          <td>Single</td>
+          <td>20th September 2010</td>
+        </tr>
+        <tr>
+          <td>7.</td>
+          <td>Jide Awesola</td>
+          <td><a href="tel:+2341234567899">01234567890</a></td>
+          <td>
+            <a href="mailto:jideawesola@gmail.com">jideawesola@gmail.com</a>
+          </td>
+          <td>Single</td>
+          <td>2nd August 2011</td>
+        </tr>
+        <tr>
+          <td>8.</td>
+          <td>Sarah Komolafe</td>
+          <td><a href="tel:+2341234567899">01234567890</a></td>
+          <td>
+            <a href="mailto:Sarahkomolafe@gmail.com">Sarahkomolafe@gmail.com</a>
+          </td>
+          <td>Married</td>
+          <td>3rd July 2011</td>
+        </tr>
+        <tr>
+          <td>9.</td>
+          <td>Jude Okafor</td>
+          <td><a href="tel:+2341234567899">01234567890</a></td>
+          <td>
+            <a href="mailto:judeokafor@gmail.com">judeokafor@gmail.com</a>
+          </td>
+          <td>Married</td>
+          <td>15th December 2015</td>
+        </tr>
+        <tr>
+          <td>10.</td>
+          <td>Chinaza Emenike</td>
+          <td><a href="tel:+2341234567899">01234567890</a></td>
+          <td>
+            <a href="mailto:chinazaemenike@gmail.com"
+              >chinazaemenike@gmail.com</a
+            >
+          </td>
+          <td>Single</td>
+          <td>9th February 2013</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

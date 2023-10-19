@@ -1,0 +1,22 @@
+h3 {
+  background-color: rgb(16, 4, 5);
+  color: #fff;
+}
+
+#related {
+  text-align: center;
+  background-color: aqua;
+  padding: 50px 30px 70px;
+}
+.classname {
+  background-image: url("/assets/images/me.jpg");
+  background-repeat: no-repeat;
+  font-weight: 900;
+  font-size: 30px;
+  padding: 250px;
+}
+
+* {
+  background-color: rgb(193, 165, 165);
+  font-family: "Poppins", sans-serif;
+}
