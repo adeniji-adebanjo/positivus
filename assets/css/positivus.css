@@ -92,6 +92,7 @@
   justify-content: start;
   align-items: center;
   column-gap: 20px;
+  margin: 2em 0;
 }
 .services-header h3 {
   background-color: var(--green);
@@ -102,8 +103,7 @@
   font-size: 15px;
 }
 .services-cards {
-  /* width: 1366px;
-  height: 768px; */
+  margin: 40px 0;
 
   display: grid;
   grid:
@@ -131,6 +131,14 @@
 }
 .analytics-tracking {
   grid-area: analytics-tracking;
+}
+.seo,
+.ppcads,
+.smm,
+.emm,
+.content-creation,
+.analytics-tracking {
+  margin: 20px 0;
 }
 
 .seo {
@@ -213,6 +221,297 @@ p {
 .smm-card-text p {
   color: #fff;
 }
-.fa-arrow-circle-right {
+
+.emm {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 45px;
+  padding: 2em 2em;
+  justify-content: space-around;
+  background-color: var(--grey);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.emm .emm-card-text h4 {
+  background: var(--Green, #b9ff66);
+  padding: 5px;
+  display: inline;
+  line-height: 45px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.emm .emm-card-text,
+h4,
+p {
+  margin: 1em 0;
+}
+
+.content-creation {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 45px;
+  padding: 2em 2em;
+  justify-content: space-around;
+  background: var(--Green, #b9ff66);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.content-creation .cc-card-text h4 {
+  background-color: var(--grey);
+  padding: 5px;
+  display: inline;
+  line-height: 45px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.cc .cc-card-text,
+h4,
+p {
+  margin: 1em 0;
+}
+
+.analytics-tracking {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 45px;
+  padding: 2em 2em;
+  justify-content: space-around;
+  background: var(--dark);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.analytics-tracking .at-card-text h4 {
+  background-color: var(--grey);
+  padding: 5px;
+  display: inline;
+  line-height: 45px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.analytics-tracking .at-card-text,
+h4,
+p {
+  margin: 1em 0;
+}
+.at-card-text p {
+  color: #fff;
+}
+.fa-arrow-circle-right,
+.fa-arrow-right {
   transform: rotate(-45deg);
+}
+
+/* Make things happen */
+.proposal {
+  display: flex;
+  column-gap: 90px;
+  align-items: center;
+  padding: 0 0 0 30px;
+  background-color: var(--grey);
+  border-radius: 45px;
+}
+
+.proposal .proposal-text button {
+  background-color: var(--dark);
+  color: var(--grey);
+  padding: 20px 35px;
+  border-radius: 14px;
+  font-size: 15px;
+}
+.proposal .proposal-text h3 p button {
+  margin: 10px 0;
+}
+
+/* Case Studies */
+.case-studies {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 4em;
+  background-color: var(--dark);
+  border-radius: 14px;
+}
+
+.case-studies-card {
+  color: var(--grey);
+  padding: 35px 30px;
+  /* border-right: 1px solid var(--grey); */
+
+  &:last-child {
+    border-right: none;
+  }
+}
+.case-studies-card {
+  position: relative;
+}
+
+.case-studies-card::after {
+  content: "";
+  position: absolute;
+  top: 25%; /* Adjust this to move the line up or down */
+  right: 0;
+  width: 1px; /* This is the width of the line */
+  height: 50%; /* This is the height of the line */
+  background-color: var(--grey); /* This is the color of the line */
+}
+
+.case-studies-card:last-child::after {
+  display: none; /* Remove the line from the last column */
+}
+.case-studies-card .cta a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.form form input {
+  margin: 15px 0;
+  padding: 10px;
+  outline: none;
+  /* width: 25em; */
+}
+
+/* .form form label {
+  color: var(--green);
+} */
+.form form input[type="radio"] {
+  margin: 15px 0 !important;
+  padding: 10px !important;
+  outline: none !important;
+}
+
+.form form input[type="radio"]:checked + label::before {
+  content: "\2022"; /* Use a bullet point or any other symbol */
+  /* color: red;  Change this to your desired color */
+  font-size: 18px; /* Adjust the size as needed */
+  padding-right: 5px;
+  color: var(--green); /* Change this to your desired color */
+}
+.form form textarea {
+  padding: 10px;
+  outline: none;
+  height: 150px;
+  width: 25em;
+  resize: none;
+}
+.form form button {
+  width: 25em;
+  cursor: pointer;
+  padding: 10px 17.5px;
+  background-color: var(--dark);
+  color: var(--grey);
+  border-radius: 7px;
+}
+
+.contact {
+  display: flex;
+  padding: 30px 50px;
+  justify-content: space-between;
+  /* column-gap: px; */
+  background-color: var(--grey);
+  border-radius: 25px;
+  align-items: flex-start;
+  /* gap: 10px;
+  flex-shrink: 0; */
+}
+
+/* .form-image {
+  margin-right: -5em;
+} */
+
+.radio-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee; /* Unchecked background color */
+}
+
+.radio-container input:checked .checkmark {
+  background-color: #2196f3; /* Checked background color */
+}
+
+/* footer */
+footer {
+  background-color: var(--dark);
+  border-radius: 14px 14px 0 0;
+  padding: 30px;
+  color: var(--grey);
+  margin: 35px 20px 0;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.footer-menu li a,
+.socials a {
+  color: var(--grey);
+  margin: 0 10px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-contact-details h3 {
+  background-color: var(--green);
+  max-width: fit-content;
+  border-radius: 7px;
+  color: var(--dark);
+}
+.footer-contact-details a {
+  text-decoration: none;
+  color: var(--grey);
+}
+.footer-contact-details p span {
+  display: block;
+}
+.footer-subscribe {
+  text-align: left;
+}
+.footer-subscribe form input {
+  padding: 10px 17.5px;
+  border-radius: 7px;
+  outline: none;
+}
+.footer-subscribe form button {
+  padding: 10px 35px;
+  border-radius: 7px;
+  background-color: var(--green);
+  color: var(--dark);
+  cursor: pointer;
+}
+.footer-copy {
+  display: inline-flex;
+  column-gap: 5em;
+}
+.footer-copy p a {
+  color: var(--grey);
 }
